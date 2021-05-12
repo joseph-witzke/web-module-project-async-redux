@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Cat from './components/Cat';
 
 function App() {
   return (
     <div className="App">
-      Async Redux
+      <h1>Async Redux</h1>
+      <Cat />
     </div>
   );
 }
