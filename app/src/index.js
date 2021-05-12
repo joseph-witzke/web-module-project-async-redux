@@ -12,6 +12,7 @@ import { Provider } from 'react-redux';
 import { reducer } from './reducers/catReducer';
 
 const store = createStore(reducer, applyMiddleware(logger, thunk));
+console.log(store)
 
 ReactDOM.render(
   <React.StrictMode>

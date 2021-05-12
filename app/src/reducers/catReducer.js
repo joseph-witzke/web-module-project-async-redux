@@ -5,7 +5,7 @@ const initialState = {
         name: {
             title: 'Mrs',
             first: 'Paula',
-            Last: 'Carmona'
+            last: 'Carmona'
         },
         picture: {
             large: "https://randomuser.me/api/portraits/women/89.jpg",
@@ -17,7 +17,7 @@ const initialState = {
     error: ''
 };  
 
-export const reducer = (state, action) => {
+export const reducer = (state = initialState, action) => {
     switch(action.type) {
         default: 
             return state;
