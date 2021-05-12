@@ -4,14 +4,14 @@ import axios from 'axios';
 const Cat = () => {
     axios.get('https://randomuser.me/api/')
         .then(res => {
-            console.log(res)
+            console.log(res.data)
         })
         .catch(err => {
             console.log(err)
         });
     return (
         <div className="container">
-            <h2>Yo here is a cat:</h2>
+            <h2>Yo here is a person:</h2>
         </div>
     )
 }
